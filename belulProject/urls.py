@@ -28,7 +28,7 @@ admin.site.site_header = settings.ADMIN_SITE_HEADER
 
 
 urlpatterns = [
-    url(r'^admin/$', admin.site.urls),
+    url(r'^admin/', admin.site.urls),
     url(r'^$', views.mainView, name='mainPage'),
     url(r'^', include('connect.urls')),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
