@@ -1,0 +1,59 @@
+{% extends 'main.html' %}
+{% load staticfiles %}
+{% block connect %}
+	<div class="container containerArt">
+		<div class="col-md-9 colArt">
+			<div class="row rowArt">
+				<article>
+					<form action="#" method="post">{% csrf_token %}
+						<div class="connection">
+						<p class="lead mLead">ОБРАТНАЯ СВЯЗЬ</p>
+						<p class="pSmall"><small>Если у вас имеются вопросы, оставьте свои контакты и мы обязательно свяжемся с Вами!</small></p>
+
+							<div class="row rowConnect">
+								<label class="col-md-3 fixedCol" for="id_connect_lastname">Фамилия:</label>
+								<div class="col-md-9"> 
+									<input type="text" class="form-control" name="{{ form.connect_lastname.name }}">
+
+								</div>
+							</div>
+							<div class="row rowConnect">
+								<label class="col-md-3 fixedCol" for="id_connect_firstname">Имя:</label>
+								<div class="col-md-9"> 
+									<input type="text" class="form-control" name="{{ form.connect_firstname.name }}">
+
+								</div>
+							</div>
+							<div class="row rowConnect">
+								<label class="col-md-3 fixedCol" for="id_connect_mail">E-Mail:</label>
+								<div class="col-md-9"> 
+									<input type="text" class="form-control" name="{{ form.connect_mail.name }}">
+									{{ form.connect_mail.errors }}
+								</div>
+							</div>
+							<div class="row rowConnect">
+								<label class="col-md-3 fixedCol" for="id_connect_phonenumber">Телефон:</label>
+								<div class="col-md-9"> 
+									<input type="text" class="form-control" name="{{ form.connect_phonenumber.name }}">
+									{{ form.connect_phonenumber.errors }}
+								</div>
+							</div>
+							<div class="row rowConnect">
+								<label class="col-md-3 fixedCol" for="id_connect_text">Сообщение:</label>
+								<div class="col-md-9"> 
+									<textarea class="form-control" rows="7" name="{{ form.connect_text.name }}"></textarea>
+								</div>
+							</div>
+
+							<div>
+							<button type="submit" class="btn btn-primary">Отправить</button>
+							</div>
+						</div>
+
+					</form>
+				</article>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+

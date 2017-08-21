@@ -1,0 +1,6 @@
+{% for article in mainView %}
+<table class="anonsTable">
+	<tr><td colspan="5"><p class="arhiv"><a href="#">{{ article.article_title }}</a></p><td class="data">{{ article.article_date }}
+	<tr><td colspan="6"><p class="newsAnons">{{ article.article_description }}</p></tr>
+</table>
+{% endfor %}

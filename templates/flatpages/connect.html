@@ -1,0 +1,41 @@
+{% extends 'main.html' %}
+{% load staticfiles %}
+	{% block title %}{{ flatpage.title }}{% endblock %}
+	{% block flatpage %}
+
+		<div class="col-md-4 col-md-offset-1 connectContent">
+			<div class="row ">
+		{% autoescape off %}{{ flatpage.content }}{% endautoescape %}
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Addc8fc83d94dfa583f40bd56ae795365b2063266d5fc914958d0cc8007a2b68e&amp;width=320&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+			</div>
+		</div>
+		<div class="col-md-4 col-md-offset-2 connectContent">
+			<div class="row rowArt">
+			<p class="cDetail"><span class="rekviziti">Реквизиты компании:</span></p>
+			<p class="cDetail"><span class="mRek">Наименование:</span> ООО "Белул"</p>
+			<p class="cDetail"><span class="mRek">Юридический адрес:</span> <br>
+			187403, Ленинградская область, г. Волхов, Кировский пр., д.30</p>
+			<p class="cDetail"><span class="mRek">Почтовый адрес:</span> <br>
+			187403, Ленинградская область, г. Волхов, Кировский пр., д.30</p>
+			<p class="cDetail"><span class="mRek">ИНН: </span>4702005328 <br>
+			<span class="mRek">КПП: </span>471801001 <br>
+			<span class="mRek">ОГРН:</span> 1024702050020</p>
+			<br><br>
+			<p class="cDetail"><span class="mRek">Банковские реквизиты:</span> <br>
+			Р/с 40 702 810 555 320 128 627 <br>
+			в УФ ОСБ 7915/01112 г. Кировск <br>
+			Северо-Западный банк СБ РФ <br>
+			г. Санкт-Петербург <br>
+			К/с 30 101 810 500 000 000 653</p>
+			<p class="cDetail"><span class="mRek">БИК:</span> 044030653
+			<span class="mRek">ОКПО:</span> 43494254 <br>
+			<span class="mRek">ОКОНХ:</span> 71100 <br>
+			<span class="mRek">ОКВЭД:</span> 50.50, 51.12.1, 63.40, 45.21.1, 45.21.2</p>
+			<p class="cDetail"><span class="mRek">Виды деятельности:</span> <br>
+			Оптовая и розничная торговля ГСМ. <br>
+			Перевозка светлых нефтепродуктов.</p>
+		
+			</div>
+		</div>
+
+	{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'main.html' %}
+{% load staticfiles %}
+{% block title %}{{ flatpage.title }}{% endblock %}
+{% block flatpage %}
+<div class="col-md-12 colAzsMap">
+	<div class="row rowAdresa2">
+		<div class="col-md-4 rowAdresa1">
+		<div class="row">
+			<p class="adresaP">Ленинградская область, Волховский район, г.Волхов, ул.Некрасова 28</p>
+		</div>
+		<div class="row adresaImg">
+			<img src="../../static/images/AZS1.png" alt="Volhov-Nekrasova">
+		</div>
+		<div class="row rowCoordinates">
+			<span class="coordinates"><strong>Координаты:</strong> 59.931637, 32.280270</span>
+		</div>
+	</div>
+	<div class="col-md-4 rowAdresa1">
+		<div class="row">
+			<p class="adresaP">Ленинградская область, Волховский район, Кисельнинская волость, 
+				104 км а/д «Санкт-Петербург - Мурманск» поворот на массив «Пупышево».</p>
+			</div>
+			<div class="row adresaImg">
+				<img src="../../static/images/AZS2.png" alt="Pupishevo" class="adresaImg">
+			</div>
+			<div class="row rowCoordinates">
+				<span class="coordinates"><strong>Координаты:</strong> 59.982095, 32.051459</span>
+			</div>
+		</div>
+		<div class="col-md-4 rowAdresa1">
+			<div class="row">
+				<p class="adresaP">Ленинградская область, г. Новая Ладога, наб. Ладожской флотилии 41</p>
+			</div>
+			<div class="row adresaImg">
+				<img src="../../static/images/AZS3.png" alt="NovayyaLadoga" class="adresaImg">
+			</div>
+			<div class="row rowCoordinates">
+				<span class="coordinates"><strong>Координаты:</strong> 60.106734, 32.318777</span>
+			</div>
+		</div>
+
+	</div>
+</div>
+{% endblock %}

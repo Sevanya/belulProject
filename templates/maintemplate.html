@@ -1,0 +1,252 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>БЕЛУЛ - нефтепродукты оптом в Волхове</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" href="{% static "images/favicon.ico" %}" type="image/x-icon">
+	<link rel="stylesheet" href="{% static "css/media.css" %}" />
+	<link rel="stylesheet" href="{% static "css/style.css" %}" />
+	<link rel="stylesheet" href="{% static "css/fonts.css" %}" />
+	<link rel="stylesheet" href="{% static "libs/bxslider/jquery.bxslider.css" %}" />
+	<link rel="stylesheet" href="{% static "libs/bootstrap/bootstrap.css" %}" />
+	<link rel="stylesheet" href="{% static "libs/font-awesome-4.7.0/css/font-awesome.min.css" %}" />
+	<!-- <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css" />
+	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" /> -->
+
+	<!-- 	<link rel="stylesheet" href="css/main.css" /> -->
+
+
+</head>
+<body>
+	<!--Header and image slider-->
+	<header class="headerTop">
+
+			<div id="headerColor" class="container">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-9 rowSlogan">					
+							<span class="slogan">ОПТОВАЯ ПРОДАЖА И ДОСТАВКА НЕФТЕПРОДУКТОВ</span>
+							<span class="sloganMedium">ПОСТАВКА НЕФТЕПРОДУКТОВ ОПТОМ</span>
+							<span class="sloganSmall">ПОСТАВКА НЕФТЕПРОДУКТОВ</span>
+						</div>
+						<!-- <img class="oilLogo" src="images/oilLogo1.png" alt="oil"> -->
+						<div class="row rowHeader">
+							<div id="logoCol" class="col-md-5">
+								<div class="logo">
+									<img id="imgLogo" src="{% static "images/belulOld.png" %}" alt="logoBelul">
+									<img id="imgLogoSmall" src="{% static "images/belulOldSmall.png" %}" alt="logoBelul">
+								</div>
+							</div>
+							<div id="mdCol5" class="col-md-4">
+							</div>
+							<div id="infoCol" class="col-md-3">
+								<table class="infoTable">
+									<tr class="phone textHeader" ><td><i class="fa fa-phone" aria-hidden="true"></i></td><td>8<span class="prefColor" >(921)</span>318-06-78</td></tr>
+									<tr class="phone textHeader" ><td><i class="fa fa-phone-square" aria-hidden="true"></i></td><td>8<span class="prefColor" >(813)</span>632-38-89</td></tr>
+									<tr class="mail textHeader"><td><a href="mailto:vsevolod.krupenko@yandex.ru"><i class="fa fa-envelope-open" aria-hidden="true"></i></td><td>__?__@belul.ru</td></tr>
+								</table>
+								<!-- <p class="zakaz">СДЕЛАТЬ ЗАКАЗАТЬ</p> -->
+								<!--<span class="textHeader"><a href="#">ЗАПРОСИТЬ КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ</a></a></span>-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Banner-->
+			<div id="banner" class="container">
+				<div class="col-md-12">
+					<div class="row">
+						<ul class="bxslider">
+							<li><p id="img1"><span class="caps">СВОЯ СЕТЬ АВТОЗАПРАВОК</span> <br><span class="mediaSize">европейское качество обслуживания</span></p><img class="bannerImg" src="{% static "images/gasStation.png" %}" alt="gasStation"></li>
+							<li><p id="img2"><span class="caps">СОБСТВЕННЫЙ АВТОПАРК</span><br><span class="mediaSize">продуманные логистические маршруты</span></p><img class="bannerImg" src="{% static "images/fura1.jpg" %}" alt="avtoDostavka"></li>
+							<li><p id="img3"><span class="caps">БОЛЕЕ 20 ЛЕТ ОПЫТА РАБОТЫ</span><br><span class="mediaSize">на рынках нефтепродуктов и нефтехимии</span></p><img class="bannerImg" src="{% static "images/newOil.png" %}" alt="dobicha"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--Menu-->
+			<div id="navigation" class="container">
+				<div class="col-md-12">
+					<div class="row">
+						<nav class="mainMenu">
+							<div class="menuBgColor">
+								<div class="divButton">
+									<button class="menuButton hidden-md hidden-lg hidden-sm"><i class="fa fa-bars" aria-hidden="true"></i></button>
+								</div>
+								<div class="row colorMenu">
+
+									<ul class="hideMenu">
+										<li id="mainId" class="active mainLi mainLiSmart"><a href="#">Главная</a>
+											<ul class="dropMenu">
+												<li class="subLi main"><a href="#">Новости рынка нефтепродуктов</a></li>
+											</ul>
+										</li>
+										<li id="companyId" class="mainLi mainLiSmart"><a href="#">Компания</a>
+											<ul class="dropMenu companyDrop">
+												<li class="subLi company oKomp"><a class="companyA" href="#">О компаниии</a></li>
+												<li class="subLi company prod"><a class="companyA" href="#">Поставляемая продукция</a></li>
+												<li class="subLi company avto"><a class="companyA" href="#">Автопарк</a></li>
+											</ul>
+										</li>
+										<li id="azsId" class="mainLi mainLiSmart"><a href="#">АЗС</a>
+											<ul class="dropMenu">
+												<li class="subLi azs"><a class="azsA" href="#">Перечень услуг</a></li>
+												<li class="subLi azs adresses"><a class="azsA"href="#">Адреса АЗС</a></li>
+											</ul>
+										</li>
+										<li id="sbitId" class="mainLi mainLiSmart"><a href="#">Сбыт</a>
+											<ul class="dropMenu">
+												<li class="subLi sbit"><a class="sbitA" href="#">Условия поставки</a></li>
+												<li class="subLi sbit transportation"><a class="sbitA" href="#">Доставка</a></li>
+											</ul>
+										</li>
+										<li id="priceId" class="mainLi mainLiSmart"><a href="#">Прайс-лист</a></li>
+										<li id="contactsId" class="mainLi mainLiSmart"><a href="/connect/">Контакты</a>
+											<ul class="dropMenu">
+												<li class="subLi contacts"><a class="contactsA" href="#">Реквизиты</a></li>
+												<li class="subLi contacts svyaz"><a class="contactsA" href="#">Обратная связь</a></li>
+											</ul>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+	</header>
+		<div class="container containerArt">
+		<div class="col-md-8 colArt">
+			<div class="row rowArt">
+				<article>
+					{% block article %}{% endblock %}	
+				</article>
+			</div>
+		</div>
+
+		<div class="col-md-4 colNews">
+			<aside class="newsTools">
+				<table id="calendar2">
+					<thead>
+						<tr><td>‹</td><td colspan="5"></td><td>›</td></tr>
+							<tr><td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Вс</td></tr>
+								<tbody>
+				</table>
+
+				<a href="#"><h4>Анонс новостей</h4></a>
+				<table class="anonsTable">
+					<tr><td colspan="5"><p class="arhiv"><a href="#">Иран увеличит добычу нефти</a></p><td class="data">25.04.2017
+					<tr><td colspan="6"><p class="newsAnons">Иран планирует увеличить добычу нефти на 3 млн. баррелей в сутки, сообщила в понедельник Shana — служба новостей министерства нефти Ирана. Этот шаг направлен на ...</p></tr>
+				</table>
+
+				<table class="anonsTable">
+					<tr><td colspan="5"><p class="arhiv"><a href="#">Саудовская Аравия сокарщает добычу и экспорт нефти</a></p><td class="data">10.04.2017
+					<tr><td colspan="6"><p class="newsAnons">Цифры показывают, что в апреле Саудовская Аравия сократила экспорт на 670 000 баррелей в сутки, что является самым резким снижением в 2017 году. Согласно данным за арпель ...</p></tr>
+				</table>
+
+				<table class="anonsTable">
+					<tr><td colspan="5"><p class="arhiv"><a href="#">Показатель мировых запасов нефти не позволяет ценам расти</a></p><td class="data">28.03.2017
+					<tr><td colspan="6"><p class="newsAnons">Резкое падение цен на рынке нефти на этой неделе до шестимесячного минимума было, вероятно, вызвано существующими опасениями по поводу экономического роста в Китае, высокими показателями мировых запасов нефти и ...</p></tr>
+				</table>
+			</aside>
+		</div>
+	</div>
+		<div class="container containerFooter">
+		<div class="col-md-12 colFooter">
+			<div class="row rowFooter">
+				<div class="cAdress">187403, Ленинградская область<br>г. Волхов, Кировский пр., д.30</div>
+					<div class="map">
+						<ul class="mapUl">
+							<li class="mapLi"><a class="mapA mapMain" href="#">Главная</a>
+								<ul class="ulMain">
+									<li><a href="#">Новости</a></li>
+								</ul>
+							</li>
+							<li class="mapLi"><a class="mapA mapCompany" href="#">Компания</a>
+								<ul class="ulCompany">
+									<li><a href="#">О компании</a></li>
+									<li><a href="#">Продукция</a></li>
+									<li><a href="#">Автопарк</a></li>
+								</ul>
+							</li>
+							<li class="mapLi"><a class="mapA mapAzs" href="#">АЗС</a>
+								<ul class="ulAzs">
+									<li><a href="#">Услуг</a></li>
+									<li><a href="#">Адреса</a></li>
+								</ul>
+							</li>
+							<li class="mapLi"><a class="mapA mapSbit" href="#">Сбыт</a>
+								<ul class="ulSbit">
+									<li><a href="#">Поставки</a></li>
+									<li><a href="#">Доставка</a></li>
+								</ul>
+							</li>
+							<li class="mapLi"><a class="mapA mapPrice" href="#">Прайс-лист</a></li>
+							<li class="mapLi"><a class="mapA mapContacts" href="#">Контакты</a>
+								<ul class="ulContacts">
+									<li><a href="#">Реквизиты</a></li>
+									<li><a href="#">Связь</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="creator">
+				<p>ООО "БЕЛУЛ"</p>
+				<p> 2017 © creativeAgency</p>
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="{% static "libs/jquery/jquery-3.2.1.min.js" %}"></script>
+	<script type="text/javascript" src="{% static "js/banner1.js" %}"></script>
+	<script type="text/javascript" src="{% static "libs/bxslider/jquery.bxslider.min.js" %}"></script>
+	<script src="{% static "js/Calendar.js" %}"></script>
+	<script type="text/javascript" src="{% static "js/testMenu.js" %}"></script>
+	<script type="text/javascript" src="{% static "js/article.js" %}"></script>
+	<!-- 	<script type="text/javascript" src="js/menuDrop.js"></script> -->
+	<!-- <script src="libs/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
+	<script src="libs/scrollto/jquery.scrollTo.min.js"></script>
+	<script src="libs/countdown/jquery.plugin.js"></script>
+	<script src="libs/countdown/jquery.countdown.min.js"></script>
+	<script src="libs/countdown/jquery.countdown-ru.js"></script>
+	<script src="libs/landing-nav/navigation.js"></script> -->
+
+
+
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+
+</body>
+</html>

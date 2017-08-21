@@ -1,0 +1,49 @@
+{% extends 'main.html' %}
+{% load staticfiles %}
+
+{% block article %}
+<div class="col-md-12 colArt">
+	<div class="row rowArt">
+		{% for article in articles %}
+		<div class="row rowArticles">
+			<div class="col-md-10">
+				<h3 class="articleTitle"><a href="/articles/get/{{ article.id }}">{{ article.article_title }}</a></h3>
+			</div>
+			<div class="col-md-2">
+				<h5 class="articleDate">{{ article.article_date }}</h5>
+			</div>
+
+
+			<div class="col-md-12 textArt description">
+				{% autoescape off %}{{ article.article_description }}{% endautoescape %}
+			</div>
+		</div>
+		{% endfor %}
+		<div class="row">
+			<div class="col-md-4 col-md-offset-5">
+				<ul class="pagination">
+					{% if articles.has_previous %}
+					<li class="page-item"><a href="/page/{{ articles.previous_page_number }}/" class="page-link">&laquo;</a></li>
+					{% else %}
+					<li class="page-item"><a href="" class="page-link">&laquo;</a></li>
+					{% endif %}
+					{% for page in articles.paginator.page_range %}
+					{% if page == articles.number %}
+					<li class="page-item"><a href="/page/{{ page }}/" class="page-link">{{ page }}</a></li>
+					{% else %}
+					<li class="page-item"><a href="/page/{{ page }}/" class="page-link">{{ page }}</a></li>
+					{% endif %}
+					{% endfor %}
+					{% if articles.has_next %}
+					<li class="page-item"><a href="/page/{{ articles.next_page_number }}/" class="page-link">&raquo;</a></li>
+					{% else %}
+					<li class="page-item"><a href="" class="page-link">&raquo;</a></li>
+					{% endif %}
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
+

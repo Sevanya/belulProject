@@ -1,0 +1,54 @@
+{% extends 'main.html' %}
+{% load staticfiles %}
+
+{% block price %}
+<div class="col-md-12">
+	<div class="row rowTablePrice">
+		<h4 class="azsPriceTitle">Цены на топливо на АЗС</h4>
+		<div class="col-md-4 col4Azs">
+			<table class="prices">
+				<tr class="rowPrices"><th colspan="2"> Цены АЗС Новая ладога</th><th class="priceDate">{% for price in priceladoga %}{{ price.pricedate_ladoga }}{% endfor %}</th></tr>
+				<tr class="rowPrices"><td>Бензин 95</td><td>Бензин 92</td><td>Дизель</td></tr>
+				{% for price in priceladoga %}
+				<tr class="rowPrices"><td>{{ price.petrol95_ladoga }}</td><td>{{ price.petrol92_ladoga }}</td><td>{{ price.diesel_ladoga }}</td></tr>
+				{% endfor %}
+			</table>
+		</div>
+		<div class="col-md-4 col4Azs">
+			<table class="prices">
+				<tr class="rowPrices"><th colspan="2"> Цены АЗС Волхов ул. Некрасова</th><th class="priceDate">{% for price in pricenekrasova %}{{ price.pricedate_nekrasova }}{% endfor %}</th></tr>
+				<tr class="rowPrices"><td>Бензин 95</td><td>Бензин 92</td><td>Дизель</td></tr>
+				{% for price in pricenekrasova %}
+				<tr class="rowPrices"><td>{{ price.petrol95_nekrasova }}</td><td>{{ price.petrol92_nekrasova }}</td><td>{{ price.diesel_nekrasova }}</td></tr>
+				{% endfor %}
+			</table>
+		</div>
+		<div class="col-md-4 col4Azs">
+			<table class="prices">
+				<tr class="rowPrices"><th colspan="2"> Цены АЗС Пупышево</th><th class="priceDate">{% for price in priceladoga %}{{ price.pricedate_ladoga }}{% endfor %}</th></tr>
+				<tr class="rowPrices"><td>Бензин 95</td><td>Бензин 92</td><td>Дизель</td></tr>
+				{% for price in priceladoga %}
+				<tr class="rowPrices"><td>{{ price.petrol95_ladoga }}</td><td>{{ price.petrol92_ladoga }}</td><td>{{ price.diesel_ladoga }}</td></tr>
+				{% endfor %}
+			</table>
+		</div>
+	</div>
+
+	<div class="row rowTablePrice">
+		<h4 class="partnerOffer">Для наших партнеров действует специальный оптовый прайс:</h4>
+		<div class="col-md-12">
+			<table class="prices">
+				<tr class="rowPrices"><th colspan="3">Оптовые цены</th><th class="priceDateOpt">{% for price in price_list %}{{ price.price_date }}{% endfor %}</th></tr>
+				<tr class="rowPrices"><td>Объем</td><td>Бензин 95</td><td>Бензин 92</td><td>Дизель</td></tr>
+				{% for price in price_list %}
+				<tr class="rowPrices"><td>{{ price.volume }}</td><td>{{ price.petrol_95 }}</td><td>{{ price.petrol_92 }}</td><td>{{ price.diesel }}</td></tr>
+				{% endfor %}
+			</table>
+		</div>
+		<div class="col-md-12">
+			<div class="row"><p class="Pricetorg">все условия обсуждаются с коммерческим отделом.</p></div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,34 @@
+{% extends 'main.html' %}
+{% load staticfiles %}
+
+{% block mainpage %}
+{% block main %}{% endblock %}
+{% block thanks %}{% endblock %}
+
+<div class="col-md-4 colNews">
+	<aside class="newsTools">
+		<table id="calendar2">
+			<thead>
+				<tr><td>‹</td><td colspan="5"></td><td>›</td></tr>
+				<tr><td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Вс</td></tr>
+				<tbody>
+				</table>
+
+				<a class="newsLink" href="{% url 'articlesAll' %}"><h4>Новости</h4></a>
+					{% for article in mainView %}
+				<table class="anonsTable">
+					<tr><td colspan="5"><p class="arhiv"><a class="newsLink" href="/articles/get/{{ article.id }}">{{ article.article_title }}</a></p><td class="data">{{ article.article_date }}
+						<tr><td colspan="6"><p class="newsAnons">{% autoescape off %}{{ article.article_description|truncatewords:25 }}{% endautoescape %}</p></tr>
+					</table>
+					{% endfor %}
+					{% for article in thanks %}
+				<table class="anonsTable">
+					<tr><td colspan="5"><p class="arhiv"><a class="newsLink" href="/articles/get/{{ article.id }}">{{ article.article_title }}</a></p><td class="data">{{ article.article_date }}
+						<tr><td colspan="6"><p class="newsAnons">{% autoescape off %}{{ article.article_description|truncatewords:25 }}{% endautoescape %}</p></tr>
+					</table>
+					{% endfor %}
+
+						</aside>
+					</div>
+				</div>
+{% endblock %}
