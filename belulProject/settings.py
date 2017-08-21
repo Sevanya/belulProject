@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '*',
-    'sevaseva.pythonanywhere.com'
+    'sevaseva.pythonanywhere.com',
     'belul.ru'
 ]
 
