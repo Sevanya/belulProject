@@ -17,8 +17,8 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 admin.autodiscover()
-# from django.conf import settings
-# from django.conf.urls.static import static
+from django.conf import settings
+from django.conf.urls.static import static
 
 from django.contrib.flatpages.views import *
 from . import views
@@ -42,7 +42,6 @@ urlpatterns = [
     url(r'^contacts/', flatpage, {'url':'/contacts/'}, name='contacts'),
     url(r'^', include('article.urls')),
     url(r'^', include('price.urls')),
-] 
-# + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
 
 # /venv/lib/python2.7/site-packages/django/contrib/admin/static/admin
