@@ -29,8 +29,8 @@ admin.site.site_header = settings.ADMIN_SITE_HEADER
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.mainView, name='mainPage'),
-    url(r'^', include('connect.urls')),
+    # url(r'^$', views.mainView, name='mainPage'),
+    # url(r'^', include('connect.urls')),
     # url(r'^ckeditor/', include('ckeditor_uploader.urls')),
     # url(r'^company/about/', flatpage, {'url':'/company/about/'}, name='about'),
     # url(r'^company/goods/', flatpage, {'url':'/company/goods/'}, name='goods'),
@@ -40,8 +40,8 @@ urlpatterns = [
     # url(r'^sale/conditionterms/', flatpage, {'url':'/sale/conditionterms/'}, name='postavka'),
     # url(r'^sale/shipping/', flatpage, {'url':'/sale/shipping/'}, name='dostavka'),
     # url(r'^contacts/', flatpage, {'url':'/contacts/'}, name='contacts'),
-    url(r'^', include('article.urls')),
-    url(r'^', include('price.urls')),
+    # url(r'^', include('article.urls')),
+    # url(r'^', include('price.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
 
 # /venv/lib/python2.7/site-packages/django/contrib/admin/static/admin
