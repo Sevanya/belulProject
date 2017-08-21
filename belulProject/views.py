@@ -13,4 +13,4 @@ from article.models import Article
 def mainView(request, page_number=1):
 	all_articles = Article.objects.all()
 	current_page = Paginator(all_articles, 2)
-	return render_to_response('test.html', {'mainView': current_page.page(page_number)})
+	return render_to_response('main.html', {'mainView': current_page.page(page_number)})
