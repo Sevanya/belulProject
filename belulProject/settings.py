@@ -25,7 +25,11 @@ SECRET_KEY = '_0l@p78k)c$!z$e2*!-zj^@75!0o$zjt$%gpwel59x+-7_085v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    '*',
+    'sevaseva.pythonanywhere.com'
+    'belul.ru'
+]
 
 
 # Application definition
@@ -76,7 +80,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media'
-                # 'django.core.context_processors.request',
+                'django.core.context_processors.request',
             ],
         },
     },
