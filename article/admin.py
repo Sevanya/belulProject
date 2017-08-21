@@ -19,6 +19,8 @@ class ArticleAdmin(admin.ModelAdmin):
 	list_filter = ['article_date']
 	ordering = ['article_date']
 
+admin.site.register(Article, ArticleAdmin)
+
 class FlatpageForm(FlatpageFormOld):
 	content = forms.CharField(widget=CKEditorUploadingWidget())
 	class Meta:
@@ -31,6 +33,6 @@ class FlatPageAdmin(FlatPageAdminOld):
 
 
 # We have to unregister the normal admin, and then reregister ours
+
 admin.site.unregister(FlatPage)
 admin.site.register(FlatPage, FlatPageAdmin)
-admin.site.register(Article, ArticleAdmin)
