@@ -20,7 +20,7 @@ admin.autodiscover()
 from django.conf import settings
 from django.conf.urls.static import static
 
-from django.contrib.flatpages.views import *
+# from django.contrib.flatpages.views import *
 from . import views
 
 admin.site.site_header = settings.ADMIN_SITE_HEADER
@@ -32,14 +32,14 @@ urlpatterns = [
     url(r'^$', views.mainView, name='mainPage'),
     url(r'^', include('connect.urls')),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
-    url(r'^company/about/', flatpage, {'url':'/company/about/'}, name='about'),
-    url(r'^company/goods/', flatpage, {'url':'/company/goods/'}, name='goods'),
-    url(r'^company/park/', flatpage, {'url':'/company/park/'}, name='avtopark'),
-    url(r'^stations/adresses/', flatpage, {'url':'/stations/adresses/'}, name='adresa'),
-    url(r'^stations/services/', flatpage, {'url':'/stations/services/'}, name='uslugi'),
-    url(r'^sale/conditionterms/', flatpage, {'url':'/sale/conditionterms/'}, name='postavka'),
-    url(r'^sale/shipping/', flatpage, {'url':'/sale/shipping/'}, name='dostavka'),
-    url(r'^contacts/', flatpage, {'url':'/contacts/'}, name='contacts'),
+    # url(r'^company/about/', flatpage, {'url':'/company/about/'}, name='about'),
+    # url(r'^company/goods/', flatpage, {'url':'/company/goods/'}, name='goods'),
+    # url(r'^company/park/', flatpage, {'url':'/company/park/'}, name='avtopark'),
+    # url(r'^stations/adresses/', flatpage, {'url':'/stations/adresses/'}, name='adresa'),
+    # url(r'^stations/services/', flatpage, {'url':'/stations/services/'}, name='uslugi'),
+    # url(r'^sale/conditionterms/', flatpage, {'url':'/sale/conditionterms/'}, name='postavka'),
+    # url(r'^sale/shipping/', flatpage, {'url':'/sale/shipping/'}, name='dostavka'),
+    # url(r'^contacts/', flatpage, {'url':'/contacts/'}, name='contacts'),
     url(r'^', include('article.urls')),
     url(r'^', include('price.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
