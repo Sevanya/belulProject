@@ -1,0 +1,656 @@
+/*header*/
+body {
+	font-family: "RobotoMedium";
+	/*background-color: #ccc;*/
+}
+a:link {
+	color:DarkRed;
+	}
+a:visited {
+	color:DarkRed;
+	}
+a:hover {
+	color:Tomato;
+}
+h3 a:hover {
+	text-decoration: none;
+}
+.newsLink:hover {
+	text-decoration: none;
+}
+#headerColor {
+	background: #1665FF;
+	background-image: linear-gradient(to top left, #1665FF, #4FD5FF);
+	background-image: -moz-linear-gradient(to top left, #1665FF, #4FD5FF);
+	background-image: -o-linear-gradient(to top left, #1665FF, #4FD5FF);
+	background-image: -webkit-linear-gradient(to top left, #1665FF, #4FD5FF);
+	background-image: -ms-linear-gradient(to top left, #1665FF, #4FD5FF);
+	border-radius: 4px;
+}
+.menuBgColor {
+	background: #1665FF;
+	background-image: linear-gradient(to top left, #1665FF, #4FD5FF);
+	background-image: -moz-linear-gradient(to top left, #1665FF, #4FD5FF);
+	background-image: -o-linear-gradient(to top left, #1665FF, #4FD5FF);
+	background-image: -webkit-linear-gradient(to top left, #1665FF, #4FD5FF);
+	background-image: -ms-linear-gradient(to top left, #1665FF, #4FD5FF);
+	height: 48px;
+	outline: 0px solid;
+}
+#imgLogoSmall {
+	padding-top: 7px;
+	padding-left: 10px;
+	outline: 0px solid;
+}
+#imgLogo {
+	width: 285px;
+	height: 77px;
+	margin-bottom: 10px;
+	outline: 0px solid;
+}
+#imgLogo:focus {
+	outline: 0px;
+}
+.logo {
+	padding: 3px;
+	max-width: 325px;
+	outline: 0px solid;
+
+}
+#logoCol {
+	outline: 0px solid;
+	float: left;
+	padding: 0;
+}
+#infoCol {
+	float: right;
+	color: #0C2F58;
+	font-family: "RobotoBold";
+	z-index: 10;
+	outline: 0px solid; 
+	padding-top: 5px;
+}
+.prefColor {
+	color: #134B8B;
+}
+#mdCol5 {
+	outline: 0px solid;
+}
+.rowHeader {
+	outline: 0px solid;
+}
+.mail {
+	color: #0C2F58;
+	font-family: "RobotoBold";
+	font-style: normal;
+}
+#mailSend {
+	text-decoration: none;
+}
+.rowSlogan {
+	padding: 5px 20px;
+	outline: 0px solid;
+}
+.sloganSmall {
+	color: #fff;
+	font-size: 16px;
+	font-family: times;
+	font-weight: bold;
+	font-family: "RobotoBold";
+	position: relative;
+	outline: 0px solid;
+	z-index: 10;
+
+}
+.sloganMedium {
+	color: #fff;
+	font-size: 20px;
+	font-family: times;
+	font-weight: bold;
+	font-family: "RobotoBold";
+	position: relative;
+	outline: 0px solid;
+	z-index: 10;
+
+}
+.slogan {
+	color: #fff;
+	font-weight: bold;
+	position: relative;
+	outline: 0px solid;
+	font-family: "RobotoBold";
+	margin-left: 0px;
+	z-index: 10;
+}
+.fa-envelope-open{
+	color: #FFFFFF;
+/*	text-shadow: 2px -2px 5px #134B8B;*/
+}
+.fa-phone-square {
+	color: #55C032;
+/*	text-shadow: 2px -3px 5px #134B8B;*/
+}
+.fa-phone {
+	color: #707070;
+/*	text-shadow: 2px -3px 5px #134B8B;*/
+}
+.bannerImg {
+	display: none;
+}
+#banner {
+	padding:0;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	outline: 0px solid;
+}
+#img1, #img2, #img3 {
+	position: absolute;
+	color: #DADADA;
+	font-family: "RobotoMedium";
+	font-size: 20px;
+	font-style: italic;
+	line-height: 0.9em;
+}
+#img2 {
+	right: 15px;
+	bottom: 20px;
+}
+#img3 {
+	bottom: 30px;
+}
+.caps {
+	color: #FFFFFF;
+}
+li img {
+	border-radius: 4px;
+}
+
+
+
+/*/*menu*/
+.hideMenu {
+	position: relative;
+	z-index: 10;
+	font-family: "RobotoMedium";
+
+}
+.colorMenu {
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+.hideMenu>li>a {
+	text-transform: uppercase;
+}
+#navigation {
+	padding: 0;
+}
+.mainMenu ul {
+	list-style-type: none;
+}
+.mainLi a {
+	outline: 0px solid;
+
+}
+.mainLi:hover a{
+	color: #5D5D5D;
+	text-decoration: none;
+}
+.subLi:hover a {
+	color: #fff;
+}
+.mainMenu a {
+	color: #fff;
+}
+.dropMenu {
+	margin: 0;
+	position: absolute;
+}
+
+
+
+/*Button*/
+.menuButton {
+	background-color: transparent;
+	border: 0;
+	font-size: 26px;
+	color: #fff;
+	-webkit-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	transition: all 0.5s;
+	outline: 0px solid;
+	height: 48px;
+	padding: 0 10px;
+}
+.menuButton:focus {
+	outline: none;
+}
+.menuButton:hover {
+	background-color: #7DCDB9;
+}
+.fa-bars:hover {
+	color: #5D5D5D;
+}
+.fa-bars {
+}
+
+
+
+/*mainArea*/
+article {
+	outline: 0px solid;
+	text-indent: 20px;
+	z-index: 1;
+	font-family: "RobotoLight";
+	padding: 20px;
+}
+.td1 {
+	color: #0C2F58;
+}
+.td2 {
+	color: #134B8B;
+}
+.colArt {
+	outline: 0px solid;
+	z-index: 1;
+}
+.rowArt {
+	outline: 0px solid;
+	z-index: 1;
+}
+.containerArt {
+	margin-top: 1px;
+	outline: 0px solid;
+	z-index: 1;
+	padding: 0;
+	background-color: #F9F9F9;
+}
+.loremTest {
+	outline: 0px solid;
+	z-index: 1;
+	text-align: justify;
+	margin: 0;
+/*	line-height: 1.5em;
+*/
+}
+.newsAnons {
+	text-align: justify;
+	font-family: "RobotoMedium";
+	font-size: 14px;
+	margin-top: 0;
+
+}
+.arhiv {
+	text-align: left;
+	font-size: 14px;
+	vertical-align: top;
+	margin-bottom: 3;
+	margin-right: 10px;
+}
+.data {
+	vertical-align: center;
+	text-align: right;
+	color: #0C2F58;
+}
+h4 {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 0;
+	color: #134B8B;	
+}
+.newsTools {
+	margin: 0;
+	padding: 0;
+	outline: 0px solid;
+}
+.colNews {
+	outline: 0px solid;
+}
+
+
+
+/*Footer*/
+.colFooter {
+	outline: 0px solid;
+}
+.rowFooter {
+	outline: 0px solid; 
+}
+.containerFooter {
+	background: #1665FF;
+	background-image: linear-gradient(to top left, #1665FF, #4FD5FF);
+	background-image: -moz-linear-gradient(to top left, #1665FF, #4FD5FF);
+	background-image: -o-linear-gradient(to top left, #1665FF, #4FD5FF);
+	background-image: -webkit-linear-gradient(to top left, #1665FF, #4FD5FF);
+	background-image: -ms-linear-gradient(to top left, #1665FF, #4FD5FF);
+	height: 140px;
+	position: relative;
+}
+.mapUl {
+	list-style-type: none;
+}
+.mapLi {
+	float: left;
+	margin: 0 2px;
+}
+.mapA:hover{
+	text-decoration: none;
+}
+li>a:hover {
+	text-decoration: none;
+}
+.mapLi>a {
+	color: #fff;
+}
+.mapA {
+	color: #fff;
+	font-family: "RobotoLight";
+	font-size: 10px;
+
+}
+.mapLi ul li {
+	list-style-type: none;
+	line-height: 0.7em;
+}
+.mapLi>ul>li>a {
+	color: #fff;
+	font-family: "RobotoLight";
+	font-size: 9px;
+}
+div.map {
+	float: right;
+	outline: 0px solid;
+}
+.ulAzs {
+	width: 32px;
+	outline: 0px solid;
+}
+.ulCompany {
+	width: 51px;
+	outline: 0px solid;
+}
+.ulMain {
+	width: 38px;
+	outline: 0px solid;
+}
+.ulSbit {
+	width: 41px;
+	outline: 0px solid;
+}
+.mapPrice {
+	outline: 0px solid;
+}
+.ulContacts {
+	width: 48px;
+	outline: 0px solid;
+}
+.creator {
+	color: #fff;
+	font-family: "RobotoLight";
+	font-size: 9px;
+	text-align: center;
+	position: relative;
+	outline: 0px solid;
+	bottom: 0;
+	margin-top: 50px;
+}
+.cAdress {
+	color: #fff;
+	font-family: "RobotoLight";
+	font-size: 14px;
+	margin-top: 5px;
+	margin-left: 10px;
+	position: absolute;
+
+}
+.creator>p {
+	line-height: 0.5em;
+}
+.colMapFooter {
+	z-index: 10;
+}
+.colMapCreator {
+	z-index: 1;
+}
+
+/*Calendar*/
+#calendar2 {
+	width: 100%;
+	font: monospace;
+	line-height: 1.2em;
+	font-size: 15px;
+	text-align: center;
+	outline: 0px solid;
+	margin-top: 35px;
+}
+#calendar2 thead tr:last-child {
+	font-size: small;
+	color: rgb(85, 85, 85);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+	color: rgb(50, 50, 50);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+	cursor: pointer;
+}
+#calendar2 tbody td {
+	color: rgb(44, 86, 122);
+}
+#calendar2 tbody td:nth-child(n+6), #calendar2 .holiday {
+	color: rgb(231, 140, 92);
+}
+#calendar2 tbody td.today {
+	background: rgb(220, 0, 0);
+	color: #fff;
+}
+#table1 {
+	font-weight: bold;
+	font-size: 17px;
+}
+
+
+
+/*Connection form*/
+#id_connect_firstname {
+	border-radius: 4px;
+	width: 70%;
+}
+#id_connect_lastname {
+	border-radius: 4px;
+	width: 70%;
+}
+#id_connect_mail {
+	border-radius: 4px;
+	width: 70%;
+}
+#id_connect_phonenumber {
+	border-radius: 4px;
+	width: 70%;
+}
+#id_connect_text {
+	border-radius: 4px;
+	width: 90%;
+	border: 2px inset;
+}
+.fixedCol{
+	min-width: 130px;
+	outline: 0px solid;
+}
+.rowConnect{
+	margin-top: 12px;
+}
+.lead.mLead {
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+.pSmall {
+	margin-bottom: 30px;
+}
+.text-center.lead {
+	margin-top: 30px;
+}
+.errorlist {
+	list-style: none;
+	font-size: 12px;
+	color: red;
+}
+
+
+
+/*Articles*/
+.read_more, .readMore {
+	color: #134B8B;
+}
+.read_more:hover {
+	color: #0C2F58;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.readMore:hover {
+	color: #0C2F58;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.textArt {
+	text-align: justify;
+}
+.articleTitle {
+	float: left;
+	margin: 0 30px;
+	padding: 0;
+}
+.articleDate {
+	float: right;
+}
+.rowArticles {
+	margin-top: 20px;
+}
+.colArtOne {
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+.description{
+	padding: 0 30px;
+}
+.connectContent {
+	margin: 40px 0;
+}
+.cDetail {
+	font-size: 16px;
+	font-family: "RobotoLight";
+}
+.rekviziti {
+	font-size: 20px;
+	font-weight: 900;
+}
+.mRek {
+	font-size: 18px;
+	font-weight: 900;
+}
+
+
+
+/*Prices*/
+.prices {
+
+}
+.rowPrices th {
+/*	border: 1px solid;
+*/	padding: 7px;
+}
+.rowPrices td {
+	border: 1px solid;
+	padding: 7px;
+}
+.rowTablePrice {
+	margin: 15px 0;
+	text-align: center;
+}
+.col4Azs {
+	text-align: center;
+	padding-top: 8px;
+}
+.prices{
+	margin: auto;
+	border: 1px solid;
+	font-family: 'RobotoMedium';
+}
+.priceDate {
+	float: right;
+	margin-top: 5px;
+	font-size: 10px;
+	vertical-align: center;
+	color: #134B8B;
+}
+.olPrice {
+	text-align: left;
+	font-size: 16px;
+	font-family: 'RobotoLight';
+	margin-top: 20px;
+	padding-top: 10px;
+}
+.olPrice>li {
+	line-height: 1.8em;
+}
+.partnerOffer {
+	text-align: center;
+	padding-top: 15px;
+	color: DarkRed;
+}
+.priceDateOpt {
+	font-size: 12px;
+	float: right;
+	color: #134B8B;
+}
+.azsPriceTitle {
+	color: DarkRed;
+	padding-top: 10px;
+}
+
+
+
+/*Adresa*/
+.colAzsMap {
+	padding: 10px;
+}
+.coordinates {
+	font-size: 14px;
+	font-family: "RobotoLight";
+}
+.adresaP {
+	font-family: "RobotoMedium";
+	padding: 0 3px;
+}
+.rowAdresa {
+	padding: 5px 10px 2px 10px;
+	text-align: center;
+}
+.rowAdresa1 {
+	padding: 10px 5px 0 5px;
+}
+.rowAdresa2 {
+	text-align: center;
+}
+.rowCoordinates {
+	padding: 3px 0 7px 0;
+	text-align: center;
+}
+.adresaImg {
+	clear: both;
+}
+.rowTerms{
+	padding: 20px 10px 20px 10px;
+}
+.certifSootv {
+	color: DarkRed;
+}
+.certifExample {
+	margin: 3px 17px;
+}
+.Pricetorg {
+	font-size: 16;
+	margin-top: 15px;
+}
+.optPriceCol {
+	margin: auto;
+}

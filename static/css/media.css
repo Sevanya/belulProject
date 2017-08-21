@@ -1,0 +1,418 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	#mdCol5 {
+		display: none;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	.cAdress {
+	display: none;
+	}
+
+	.slogan {
+		display: none;
+	}
+	.mediaSize {
+		font-size: 12px;
+	}
+
+	#img1, #img2, #img3 {
+		margin: 10px 15px;
+
+	}
+
+	#img1 {
+		left: 10px;
+		top: 15px;
+	}	
+
+	#img2 {
+		left: 10px;
+		top: 15px;
+	}
+	#img3 {
+		left: 10px;
+		top: 15px;	
+	}
+
+	/*menuSmall*/
+
+	.hideMenu {
+		display: none;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		z-index: 10;
+	}
+	
+	#mainId:hover {
+		padding-left: 10px;	
+	}
+	#companyId:hover {
+		padding-left: 10px;	
+	}
+	#azsId:hover {
+		padding-left: 10px;	
+	}
+	#sbitId:hover {
+		padding-left: 10px;	
+	}
+	#priceId:hover {
+		padding-left: 10px;	
+	}
+	#contactsId:hover {
+		padding-left: 10px;	
+	}
+
+
+	.colorMenu {
+		background-color: #7DCDB9;
+		padding: 0;
+		margin: 0;
+		outline: 0px solid;
+		z-index: 100;
+		opacity: 0.95;
+	}
+
+	.subLi {
+		display: none;
+		padding: 5px 0 5px 0;
+		margin: 0;
+		z-index: 10;
+
+	}
+
+	.subli>a {
+		margin: 0;
+		padding: 0;
+	}
+
+	.mainLi {
+		outline: 0px solid;
+		padding: 5px 0 0 0;
+		width: 100%;
+		z-index: 10;
+	}
+
+	.mainLi:hover {
+		background-color: #8BE3CD;
+	}
+
+	.mainLi:hover a{
+		color: #5D5D5D;
+	}
+
+	.subLi:hover a {
+		color: #fff;
+	}
+
+	.subLi:hover {
+		background-color: #95F3DB;
+	}
+
+	.mainLi a {
+		padding: 5px 30px;
+	}
+
+
+	#imgLogo {
+	margin-left: 0;
+	}
+
+
+/*	.hideMenu {
+		display: none;
+	}*/
+}
+
+	/* Extra Small Devices, Phones */
+@media only screen and (max-width : 514px) {
+}
+
+@media only screen and (max-width : 480px) {
+	#infoCol {
+	margin-top: 0;
+	}
+
+	#imgLogo {
+		display: none;
+	}
+
+	.sloganMedium {
+		display: none;
+	}
+
+	.textHeader {
+	font-size: 12px;
+	}
+}
+	/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+}
+
+
+	/*==========  Mobile First Method  ==========*/
+
+	/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+}
+
+	/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	.sloganSmall {
+		display: none;
+	}
+	#imgLogoSmall {
+		display: none;
+	}
+
+/*	#infoCol {
+	margin-top: 5px;
+	}*/
+
+	.fa {
+		margin-right: 5px;
+	}
+
+	.fa-phone-square {
+		color: #55C032;
+		font-size: 24px;
+	}
+
+	.fa-envelope-open{
+		font-size: 22px;
+		color: #A83138;
+		margin-right: 8px;
+	}
+
+	.fa-phone {
+		font-size: 24px;
+		margin-right: 7px;
+		color: #707070;
+
+	}
+
+	.textHeader {
+	font-size: 16px;
+	}
+}
+
+@media only screen and (min-width : 515px) {
+
+
+}
+
+	/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	#imgLogo {
+	margin-left: 10px;
+	}
+
+
+	.caps {
+		font-size: 30px;	
+	}
+
+	.phone {
+	font-size: 20px;
+	}
+
+	.mail {
+	font-size: 18px;
+	}
+
+	#img1, #img2, #img3 {
+		font-size: 20px;
+		margin: 20px 25px;
+
+	}
+
+	.sloganMedium {
+		display: none;
+	}
+	/*menu*/
+
+	ul {
+		margin: 0;
+		padding: 0;
+		outline: 0px solid;
+	}
+
+	.dropMenu {
+	padding-top: 13px;
+	opacity: 0.9;
+	}
+
+
+	.mainLi {
+		outline: 0px solid;
+		padding: 10px 0 0 0;
+		float: left;
+		text-align: center;
+
+	}
+
+
+	.mainLi {
+		padding: 15px 0 14px 0;
+	}
+
+	.subLi {
+		outline: 0px solid;
+		padding: 10px;
+		margin: 0;
+		display: none;
+		text-align: left;
+
+	}
+
+	.subLi a {
+		outline: 0px solid;
+	}
+
+	.mainLi:hover {
+		background-color: #8BE3CD;
+
+	}
+
+
+	.subLi:hover a{
+	color: #fff;
+	}
+
+	.mainLi:hover .subLi {
+		display: block;
+	}
+
+	.subLi:hover {
+		background-color: #82D4BE;
+	}
+
+
+	/*Submenu:
+	Main*/
+	#mainId {
+		width: 102px;
+		margin: 0 0 0 15px;
+	}
+
+	.main {
+		width: 270px;
+		background-color: #8BE3CD;
+
+	}
+
+	.mainA {
+		text-transform: none;
+	}
+
+	/*Company*/
+	#companyId {
+		width: 119px;
+	}
+
+	.company {
+		width: 220px;
+		background-color: #8BE3CD;
+	}
+
+	.companyA {
+		text-transform: none;
+	}
+
+	/*AZS*/
+	#azsId {
+		width: 62px;
+	}
+
+	.azs {
+		width: 140px;
+		background-color: #8BE3CD;
+
+	}
+
+	.azsA {
+		text-transform: none;
+	}
+
+	/*Sbit*/
+
+/*	#sbitId {
+		width: 74px;
+	}*/
+
+	.sbit {
+		width: 160px;
+		background-color: #8BE3CD;
+
+	}
+
+	.sbitA {
+		text-transform: none;
+	}
+
+	/*price*/
+	#priceId {
+		height: 48px;
+	}
+
+	#priceId>a:link {
+		color: #fff;
+		text-decoration: none;
+	}
+
+
+	/*Contacts*/
+
+	#contactsId {
+		width: 115px;
+	}
+
+	.contacts {
+		width: 140px;
+		background-color: #8BE3CD;
+
+	}
+
+	.contactsA {
+		text-transform: none;
+	}
+
+	#priceId {
+		padding: 15px 10px 14px 10px;
+	}
+	#sbitId {
+		padding: 14px 10px 14px 10px;
+	}
+
+	.slogan {
+		font-size: 24px;
+	}
+
+}
+
+	/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.slogan {
+		font-size: 26px;
+	}
+
+	.adresaP {
+		height: 80px;
+	}
+}
+
+	/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}
