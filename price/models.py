@@ -9,7 +9,7 @@ class Price(models.Model):
 	petrol_95 = models.FloatField(null=True,blank=True, verbose_name='Бензин 95')
 	petrol_92 = models.FloatField(null=True,blank=True, verbose_name='Бензин 92')
 	diesel = models.FloatField(null=True,blank=True, verbose_name='Дизель')
-	price_date = models.CharField(max_length=20, null=True, blank=True, verbose_name='Дата', default=None)
+	price_date = models.CharField(max_length=20, blank=True, verbose_name='Дата')
 
 	class Meta():
 		verbose_name = 'Оптовые цены'
