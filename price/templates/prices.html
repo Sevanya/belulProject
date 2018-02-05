@@ -27,7 +27,7 @@
 			<table class="prices">
 				<tr class="rowPrices"><th colspan="2"> Цены АЗС Пупышево</th><th class="priceDate">{% for price in pricepupish %}{{ price.pricedate_pupish }}{% endfor %}</th></tr>
 				<tr class="rowPrices"><td>Бензин 95</td><td>Бензин 92</td><td>Дизель</td></tr>
-				{% for price in priceladoga %}
+				{% for price in pricepupish %}
 				<tr class="rowPrices"><td>{{ price.petrol95_pupish }}</td><td>{{ price.petrol92_pupish }}</td><td>{{ price.diesel_pupish }}</td></tr>
 				{% endfor %}
 			</table>
