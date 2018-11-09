@@ -657,3 +657,14 @@ div.map {
 #produc {
 	padding: 15px 20px 15px 20px;
 }
+
+.infoTable__email {
+	font-size: 14px;
+}
+
+@media screen and (max-width: 380px){
+	.infoTable__email {
+		font-size: 10px;
+    margin-left: 3px;
+	}
+}
