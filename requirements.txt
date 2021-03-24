@@ -34,7 +34,7 @@ pytz==2017.2
 pyuploadcare==2.1.0
 PyYAML==3.12
 requests==2.17.3
-rsa==3.4.2
+rsa==4.1
 s3transfer==0.1.10
 six==1.10.0
 static3==0.7.0
